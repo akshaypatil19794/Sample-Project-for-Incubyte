@@ -61,6 +61,9 @@ public class ComposeMail extends BaseTestCase {
 		executor.executeScript("arguments[0].click();", ele);
 	}
 
+	// From below step gmail is not supporting for automation
+	// Hence dummy xpath and dummy data is used for autoamtion
+	
 	@When("User enters Password in PasswordTextField")
 	public void user_enters_Password_in_PasswordTextField() {
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("pwd");
